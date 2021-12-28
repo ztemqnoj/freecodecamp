@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en" id="main">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        <title>freeCodeCamp Survey Form</title>
+    </head>
+
+    <body id="body">
+        <div class="top_stuff">    
+            <h1 id="title">
+                Gamer survey form
+            </h1>
+            
+            <p id="description">
+                This survey is used to collect information about what video game 
+                genres a user prefers.
+            </p>
+        </div>
+
+        <div>
+            <form id="survey-form" class="form">
+                <label for="name" id="name-label">Name.</label>
+                <input type="text" id="name" placeholder="Enter your name" required><br>
+                <label for="email" id="email-label">Email.</label>
+                <input type="email" id="email" placeholder="Enter your email address" required><br>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" min="0" max="100" id="number" placeholder="Enter your age"><br>
+
+                <label for="experience">Experience</label>
+                <select id="dropdown" placeholder="Select your experience level">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="expert">Expert</option>
+                </select>
+
+                <br>
+
+                <p>How many hours a week do you typically play video games?</p>
+                <input type="radio" id="0-5" name="name" value="0-5 hours per week">
+                <label for="0-5">0-5 Hours</label>
+                <br>
+                <input type="radio" id="6-15" name="name" value="6-15 hours per week">
+                <label for="6-15">6-15 Hours</label>
+                <br>
+                <input type="radio" id="16+" name="name" value="16+ hours per week">
+                <label for="16+">16+ Hours</label> 
+
+                <br>
+
+                <p>What genres do you play? (Check all that apply</p>
+                <input type="checkbox" id="genre1" name="genre1" value="Action Adventure">
+                <label>Action Adventure</label>
+                <br>
+                <input type="checkbox" id="genre1" name="genre2" value="Puzzle">
+                <label>Puzzle</label>       
+                <br>
+                <input type="checkbox" id="genre1" name="genre3" value="RPG">
+                <label>RPG</label>       
+                <br>
+                <input type="checkbox" id="genre1" name="genre4" value="Shooter">
+                <label>Shooter</label>
+                <br>
+                <input type="checkbox" id="genre1" name="genre5" value="Sports">
+                <label>Sports</label>    
+                <br>
+                <br>
+                <label for="game">What is your favorite game of all time?</label>
+                <br>
+                <br>
+                <textarea id="game" name="game" rows="4" cols="50">Please enter the name of your favorite video game.
+                </textarea>
+                <br>
+                <br>
+                <label for="submit">Submit</label>
+                <input type="submit" id="submit" value="submit">
+            </form>
+        </div>
+    </body>
+
+</html>
